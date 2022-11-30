@@ -8,14 +8,14 @@ import CounterContext from "./CounterContext";
 
 function App() {
   return (
-    <CounterContext.Provider value={10}>
+    <CounterContext.Provider value={100}>
       <div className="App">
-        <Dine name="Biryani" sweet="Sheer" />
+        <Dine name="Code" sweet="Sheer" />
         {/* <Nap name = "Weeping" play = "Playing"/> */}
         <UseState_Hook />
 
         <Parent />
-      </div>
+      </div >
     </CounterContext.Provider>
   );
 }
