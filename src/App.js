@@ -3,13 +3,20 @@ import Dine from "./Dine";
 import Nap from "./Nap";
 import UseState_Hook from "./UseState_Hook";
 
+import Parent from "./Parent";
+import CounterContext from "./CounterContext";
+
 function App() {
   return (
-    <div className="App">
-      <Dine name = "Biryani" sweet = "Sheer"/>
-      {/* <Nap name = "Weeping" play = "Playing"/> */}
-      <UseState_Hook />
-    </div>
+    <CounterContext.Provider value={10}>
+      <div className="App">
+        <Dine name="Biryani" sweet="Sheer" />
+        {/* <Nap name = "Weeping" play = "Playing"/> */}
+        <UseState_Hook />
+
+        <Parent />
+      </div>
+    </CounterContext.Provider>
   );
 }
 
