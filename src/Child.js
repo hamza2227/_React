@@ -1,10 +1,14 @@
-import React,{useContext} from 'react';
+import React, { useContext } from 'react';
 import CounterContext from './CounterContext';
 
 const Child = () => {
-    let conuterValue = useContext(CounterContext)
+let counterValue = useContext(CounterContext); 
   return (
-    <div>Child-- The value of UseContext is {conuterValue}</div>
+    <div>
+        <h4>Child</h4>
+        {/* <CounterContext /> */}
+        <h4>The value of Counter Context is {counterValue}</h4>
+    </div>
   )
 }
 

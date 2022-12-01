@@ -8,7 +8,8 @@ import CounterContext from "./CounterContext";
 
 function App() {
   return (
-    <CounterContext.Provider value={100}>
+
+    <CounterContext.Provider value={11}>
       <div className="App">
         <Dine name="Code" sweet="Sheer" />
         {/* <Nap name = "Weeping" play = "Playing"/> */}
